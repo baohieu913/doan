@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Readers.login.controller">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: F2F0FF;">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="780.0" layoutX="10.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="120.0">
+               <image>
+                  <Image url="@../../../resources/IMG/img/5-dieu-ban-doc-can-biet-ve-thu-vien-quoc-gia-viet-nam-1-3.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="800.0" prefHeight="800.0" prefWidth="400.0" style="-fx-background-color: F2F0FF;">
+         <children>
+            <GridPane layoutX="10.0" layoutY="20.0" prefHeight="760.0" prefWidth="380.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="0.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="0.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="UsernameLogin" prefHeight="35.0" promptText="Tên đăng nhập" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <PasswordField fx:id="PasswordLogin" prefHeight="35.0" promptText="Mật khẩu" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </GridPane.margin>
+                  </PasswordField>
+                  <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="7">
+                     <children>
+                        <Button mnemonicParsing="false" text="Đăng nhập với tư cách thủ thư" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="8" />
+                  <Label fx:id="wrongLogin" prefHeight="26.0" prefWidth="280.0" textFill="#ef0000" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="TOP" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Poor Richard&quot;;" text="Welcome to Hanoi University of Civil Engineering's Library" textAlignment="CENTER" wrappingWidth="368.20599365234375" GridPane.rowIndex="1" GridPane.rowSpan="2">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="21.0" GridPane.rowIndex="6">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="94.0" text="Đăng nhập" />
+                        <Button mnemonicParsing="false" onAction="#CreateNewAccount" prefHeight="26.0" prefWidth="66.0" text="Đăng ký " textAlignment="CENTER" />
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
